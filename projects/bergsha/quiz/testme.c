@@ -3,22 +3,38 @@
 #include<stdlib.h>
 #include<time.h>
 
-char inputChar(int state)
+int randRange(int lower, int upper)
+{
+    return (rand() % (upper - lower + 1) + lower);
+}
+
+char inputChar()
 {
 	char key[9] = "[({ ax})]";
     // TODO: rewrite this function
 	// use random generator to generate a char
 	// within the ascii range that includes brackets
 	// and spaces
-    return key[state];
+
+    char input = randRange(32, 125);
+    return input;
 }
 
 char *inputString()
 {
+    int strLen = 6;
     // TODO: rewrite this function
-	// use random generator to generate a string using 
-	// all lower case ascii characters
-    return "reset";
+	// use random generator to generate a string using
+	// all lower case ascii characters between e and t in the alphabet
+    char* inString = malloc(strLen + 1);
+
+    for (int i=0; i<strLen-1; i++)
+    {
+        inString[i] = randRange(101, 116);
+    }
+    inString[5] = '\0';
+
+    return inString;
 }
 
 void testme()
@@ -30,7 +46,7 @@ void testme()
   while (1)
   {
     tcCount++;
-    c = inputChar(state);
+    c = inputChar();
     s = inputString();
     printf("Iteration %d: c = %c, s = %s, state = %d\n", tcCount, c, s, state);
 
