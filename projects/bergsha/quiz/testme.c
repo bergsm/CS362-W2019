@@ -10,12 +10,9 @@ int randRange(int lower, int upper)
 
 char inputChar()
 {
-	char key[9] = "[({ ax})]";
-    // TODO: rewrite this function
 	// use random generator to generate a char
 	// within the ascii range that includes brackets
 	// and spaces
-
     char input = randRange(32, 125);
     return input;
 }
@@ -23,7 +20,6 @@ char inputChar()
 char *inputString()
 {
     int strLen = 6;
-    // TODO: rewrite this function
 	// use random generator to generate a string using
 	// all lower case ascii characters between e and t in the alphabet
     char* inString = malloc(strLen + 1);
