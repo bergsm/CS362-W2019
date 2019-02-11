@@ -1,41 +1,108 @@
 Result for running dominion tests:
 unittest1.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:5.02% of 558
+Creating 'dominion.c.gcov'
 
 unittest2.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:22.40% of 558
+Creating 'dominion.c.gcov'
 
 unittest3.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:22.76% of 558
+Creating 'dominion.c.gcov'
 
 unittest4.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
+Bonus
+TEST PASSED!
+Copper
+TEST FAILED: 'testG->coins == oldCoins + 1' on line 32.
+Silver
+TEST FAILED: 'testG->coins == oldCoins + 2' on line 38.
+Gold
+TEST FAILED: 'testG->coins == oldCoins + 3' on line 44.
+File 'dominion.c'
+Lines executed:23.12% of 558
+Creating 'dominion.c.gcov'
 
 cardtest1.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
-
-cardtest2.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
-
-cardtest3.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
-
-cardtest4.c:
-Hello, WorldFile 'dominion.c'
-No executable lines
-Removing 'dominion.c.gcov'
-
