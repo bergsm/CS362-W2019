@@ -106,7 +106,8 @@ Lines executed:23.12% of 558
 Creating 'dominion.c.gcov'
 
 cardtest2.c:
-Testing Card: smithyTEST 1: testing number of cards in in player's hand has changed
+Testing Card: smithy
+TEST 1: testing number of cards in in player's hand has changed
 TEST PASSED!
 TEST 2: testing number of cards in in player's hand has changed
 TEST PASSED!
@@ -115,7 +116,8 @@ Lines executed:29.21% of 558
 Creating 'dominion.c.gcov'
 
 cardtest3.c:
-Testing Card: villageTEST 1: testing number of cards in in player's hand has changed
+Testing Card: village
+TEST 1: testing number of cards in in player's hand has changed
 TEST FAILED: 'oldHandCount != newHandCount' on line 44.
 TEST 2: testing number of cards in in player's hand has changed
 TEST PASSED!
@@ -126,7 +128,8 @@ Lines executed:30.29% of 558
 Creating 'dominion.c.gcov'
 
 cardtest4.c:
-Testing Card: great_hallTEST 1: testing number of cards in in player's hand has changed
+Testing Card: great_hall
+TEST 1: testing number of cards in in player's hand has changed
 TEST FAILED: 'oldHandCount != newHandCount' on line 44.
 TEST 2: testing number of cards in in player's hand has changed
 TEST PASSED!

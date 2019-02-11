@@ -25,7 +25,7 @@ void cardtest3()
 	// initialize a game state and player cards
 	initializeGame(2, k, seed, testG);
 
-	printf("Testing Card: %s", TESTCARD);
+	printf("Testing Card: %s\n", TESTCARD);
 
 	// store old deck and hand counts
 	int oldHandCount = numHandCards(testG);
