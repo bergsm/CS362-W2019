@@ -8,10 +8,10 @@
 #define NUMELEM(x) (sizeof(x) / sizeof((x)[0]))
 #define asserttrue(bool) if(bool) printf("TEST PASSED!\n"); else printf("TEST FAILED: '" #bool "' on line %d.\n", __LINE__);
 
-#define TESTCARD "adventurer"
+#define TESTCARD "smithy"
 
-// adventurer card test
-void cardtest1()
+// smithy card test
+void cardtest2()
 {
 	struct gameState* testG = newGame();
 	int k[10] = {adventurer, embargo, village, minion, mine, cutpurse,
@@ -31,7 +31,7 @@ void cardtest1()
 	int oldHandCount = numHandCards(testG);
 	int oldDeckCount = testG->deckCount[0];
 
-	cardEffect(adventurer, choice1, choice2, choice3, testG, handpos, &bonus);
+	cardEffect(smithy, choice1, choice2, choice3, testG, handpos, &bonus);
 
 	// store new deck and hand counts
 	int newHandCount = numHandCards(testG);
@@ -48,6 +48,6 @@ void cardtest1()
 
 int main(int argc, char *argv[])
 {
-    cardtest1();
+    cardtest2();
     return 0;
 }
