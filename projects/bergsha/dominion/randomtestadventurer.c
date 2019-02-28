@@ -11,7 +11,7 @@
 #define TESTCARD "adventurer"
 
 // adventurer card test
-void cardtest1()
+void randomtestadventurer()
 {
 	struct gameState* testG = newGame();
 	int k[10] = {adventurer, embargo, village, minion, mine, cutpurse,
@@ -27,27 +27,45 @@ void cardtest1()
 
 	printf("Testing Card: %s", TESTCARD);
 
-	// store old deck and hand counts
-	int oldHandCount = numHandCards(testG);
-	int oldDeckCount = testG->deckCount[0];
+    // main testing loop
 
-	cardEffect(adventurer, choice1, choice2, choice3, testG, handpos, &bonus);
+        // set values of testG to random (but logical) values
+        // set total supply of treasure cards to >= 2
 
-	// store new deck and hand counts
-	int newHandCount = numHandCards(testG);
-	int newDeckCount = testG->deckCount[0];
+        // store old deck and hand counts
+        int oldHandCount = numHandCards(testG);
+        int oldDeckCount = testG->deckCount[0];
+        //TODO store discard count
 
-	// test 1 number of cards in the deck has changed
-	printf("TEST 1: testing number of cards in player's hand has changed\n");
-	asserttrue(oldHandCount != newHandCount);
+        // assert the card did not fail to play
+        asserttrue(cardEffect(adventurer, choice1, choice2, choice3, testG, handpos, &bonus) == 0)
 
-	// test 2 number of cards in the player's hand has changed
-	printf("TEST 2: testing number of cards in deck has changed\n");
-	asserttrue(oldDeckCount != newDeckCount);
+        // store new deck and hand counts
+        int newHandCount = numHandCards(testG);
+        int newDeckCount = testG->deckCount[0];
+        //TODO store discard count
+
+        // test 1 number of cards in the deck has changed
+        printf("TEST 1: testing number of cards in player's hand has changed\n");
+        asserttrue(oldHandCount != newHandCount);
+
+        // test 2 number of cards in the player's hand has changed
+        printf("TEST 2: testing number of cards in deck has changed\n");
+        asserttrue(oldDeckCount != newDeckCount);
+
+        //TODO test that discard pile has changed
+        // test 3 number of cards in the discard pile has changed
+        printf("TEST 3: testing number of cards in deck has changed\n");
+        asserttrue(oldDeckCount != newDeckCount);
+
+        //TODO test that discard pile has changed
+        // test 4 number of cards in the player's hand has increased by 2
+        printf("TEST 3: testing number of cards in deck has changed\n");
+        asserttrue(oldDeckCount != newDeckCount);
 }
 
 int main(int argc, char *argv[])
 {
-    cardtest1();
+    randomtestadventurer();
     return 0;
 }
