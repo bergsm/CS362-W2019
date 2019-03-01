@@ -643,6 +643,34 @@ int getCost(int cardNumber)
   return -1;
 }
 
+int adventurerAction(int cardDrawn, int z, int temphand[MAX_HAND], int currentPlayer, struct gameState *state, int drawntreasure)
+{
+printf("In adventurer\n");
+while(drawntreasure<2){
+    if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+      shuffle(currentPlayer, state);
+      printf("Suffled\n");
+    }
+    drawCard(currentPlayer, state);
+    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+    // BUG changed "cardDrawn == copper || cardDrawn == silver || cardDrawn == gold" to "cardDrawn == copper && cardDrawn == silver && cardDrawn == gold"
+    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+      drawntreasure+=2;
+    else{
+      temphand[z]=cardDrawn;
+      state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+      z++;
+    }
+    printf("Num drawn treasure: %d\n", drawntreasure);
+  }
+  while(z-1>=0){
+    state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+    printf("Discarding.. %d left. ", z);
+    z=z-1;
+  }
+  return 0;
+}
+
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
   int i;
@@ -662,29 +690,31 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     nextPlayer = 0;
   }
 
-  int adventurerAction(int cardDrawn, int z, int temphand[MAX_HAND], int currentPlayer)
-  {
-    while(drawntreasure<2){
-        if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
-          shuffle(currentPlayer, state);
-        }
-        drawCard(currentPlayer, state);
-        cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-        // BUG changed "cardDrawn == copper || cardDrawn == silver || cardDrawn == gold" to "cardDrawn == copper && cardDrawn == silver && cardDrawn == gold"
-        if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-          drawntreasure+=2;
-        else{
-          temphand[z]=cardDrawn;
-          state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-          z++;
-        }
-      }
-      while(z-1>=0){
-        state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
-        z=z-1;
-      }
-      return 0;
-  }
+  //int adventurerAction(int cardDrawn, int z, int temphand[MAX_HAND], int currentPlayer)
+  //{
+  //  printf("In adventurer\n");
+  //  while(drawntreasure<2){
+  //      printf("Num drawn treasure: %d", drawntreasure);
+  //      if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+  //        shuffle(currentPlayer, state);
+  //      }
+  //      drawCard(currentPlayer, state);
+  //      cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+  //      // BUG changed "cardDrawn == copper || cardDrawn == silver || cardDrawn == gold" to "cardDrawn == copper && cardDrawn == silver && cardDrawn == gold"
+  //      if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+  //        drawntreasure++;
+  //      else{
+  //        temphand[z]=cardDrawn;
+  //        state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+  //        z++;
+  //      }
+  //    }
+  //    while(z-1>=0){
+  //      state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+  //      z=z-1;
+  //    }
+  //    return 0;
+  //}
 
     int smithyAction(int currentPlayer)
     {
@@ -743,7 +773,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card ) 
     {
     case adventurer:
-        return adventurerAction(cardDrawn, z, &temphand[MAX_HAND], currentPlayer);
+        return adventurerAction(cardDrawn, z, &temphand[MAX_HAND], currentPlayer, state, drawntreasure);
 
     case council_room:
       //+4 Cards
