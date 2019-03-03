@@ -1,6 +1,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
+#include "randomGame.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -13,43 +14,54 @@
 // village card test
 void cardtest3()
 {
-	struct gameState* testG = newGame();
-	int k[10] = {adventurer, embargo, village, minion, mine, cutpurse,
-			sea_hag, tribute, smithy, gardens};
+	//struct gameState* testG = newGame();
+	struct gameState testG;
+	//int k[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, gardens};
 
 	int handpos, choice1, choice2, choice3, bonus;
 	handpos = choice1 = choice2 = choice3 = bonus = 0;
 
-	int seed = 1234;
+	//int seed = 1234;
 
-	// initialize a game state and player cards
-	initializeGame(2, k, seed, testG);
 
 	printf("Testing Card: %s\n", TESTCARD);
 
-	// store old deck and hand counts
-	int oldHandCount = numHandCards(testG);
-	int oldDeckCount = testG->deckCount[0];
-	int oldActionsCount = testG->numActions;
+    for (int n=0; n<2000; n++)
+    {
 
-	cardEffect(village, choice1, choice2, choice3, testG, handpos, &bonus);
+        //initializeGame(2, k, seed, testG);
+        if (randomizeGame(village, &testG) != 0)
+        {
+            printf("Randomize unsuccessful\n");
+            continue;
+        }
 
-	// store new deck and hand counts
-	int newHandCount = numHandCards(testG);
-	int newDeckCount = testG->deckCount[0];
-	int newActionsCount = testG->numActions;
+        printf("Test #%d\n", n);
 
-	// test 1 number of cards in the deck has changed
-	printf("TEST 1: testing number of cards in player's hand has changed\n");
-	asserttrue(oldHandCount != newHandCount);
+        // store old deck and hand counts
+        int oldHandCount = numHandCards(&testG);
+        int oldDeckCount = testG.deckCount[0];
+        int oldActionsCount = testG.numActions;
 
-	// test 2 number of cards in the player's hand has changed
-	printf("TEST 2: testing number of cards in deck has changed\n");
-	asserttrue(oldDeckCount != newDeckCount);
+        asserttrue(cardEffect(village, choice1, choice2, choice3, &testG, handpos, &bonus) == 0);
 
-	// test 3 number of actions has increased by 2
-	printf("TEST 3: testing number of actions has increased by 2\n");
-	asserttrue(oldActionsCount+2 == newActionsCount);
+        // store new deck and hand counts
+        int newHandCount = numHandCards(&testG);
+        int newDeckCount = testG.deckCount[0];
+        int newActionsCount = testG.numActions;
+
+        // test 1 number of cards in the deck has changed
+        printf("TEST 1: testing number of cards in player's hand has changed\n");
+        asserttrue(oldHandCount != newHandCount);
+
+        // test 2 number of cards in the player's hand has changed
+        printf("TEST 2: testing number of cards in deck has changed\n");
+        asserttrue(oldDeckCount != newDeckCount);
+
+        // test 3 number of actions has increased by 2
+        printf("TEST 3: testing number of actions has increased by 2\n");
+        asserttrue(oldActionsCount+2 == newActionsCount);
+    }
 }
 
 int main(int argc, char *argv[])

@@ -1,6 +1,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
+#include "randomGame.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -15,79 +16,39 @@ void randomtestadventurer()
 {
 	//struct gameState* testG = newGame();
 	struct gameState testG;
-	int k[10] = {adventurer, embargo, village, minion, mine, cutpurse,
-			sea_hag, tribute, smithy, gardens};
+	//int k[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, gardens};
 
 	int handpos, choice1, choice2, choice3, bonus;
 	handpos = choice1 = choice2 = choice3 = bonus = 0;
 
-	int seed = 1234;
-
-	// initialize a game state and player cards
-	//initializeGame(2, k, seed, testG);
+	//int seed = 1234;
 
 	printf("Testing Card: %s\n", TESTCARD);
 
     // main testing loop
     for (int n=0; n<2000; n++)
     {
-        // set values of testG to random (but logical) values
-        for (int i=0; i<sizeof(struct gameState); i++)
+        // initialize a game state and player cards
+        if (randomizeGame(adventurer, &testG) != 0)
         {
-            ((char*)&testG)[i] = floor(Random() * 256);
-        }
-        testG.numPlayers = floor(Random() * MAX_PLAYERS);
-        testG.whoseTurn = floor(Random() * testG.numPlayers);
-        //int p = whoseTurn(testG);
-        int p = whoseTurn(&testG);
-        printf("p= %d\n", p);
-        //testG->deckCount[p] = floor(Random() * MAX_DECK);
-        //testG->discardCount[p] = floor(Random() * MAX_DECK);
-        //testG->handCount[p] = floor(Random() * MAX_HAND);
-        testG.deckCount[p] = floor(Random() * MAX_DECK);
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = copper;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = copper;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = copper;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = silver;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = silver;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = silver;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = gold;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = gold;
-        testG.deck[p][(int)floor(Random()*testG.deckCount[p])] = gold;
-        testG.discardCount[p] = floor(Random() * testG.deckCount[p]);
-        testG.handCount[p] = floor(Random() * testG.deckCount[p]);
-        testG.supplyCount[copper] = 3;
-        testG.supplyCount[silver] = 3;
-        testG.supplyCount[gold] = 3;
-
-        //Ensure there are enough treasure cards to test adventurer
-        //int treasureCt = testG->supplyCount[copper] + testG->supplyCount[silver] + testG->supplyCount[gold];
-        int treasureCt = testG.supplyCount[copper] + testG.supplyCount[silver] + testG.supplyCount[gold];
-        printf("Number of treasure: %d\n", treasureCt);
-        printf("Number of copper: %d\n", testG.supplyCount[copper]);
-        printf("Number of silver: %d\n", testG.supplyCount[silver]);
-        printf("Number of gold: %d\n", testG.supplyCount[gold]);
-        if (treasureCt < 6)
-        {
-            printf("Not enough treasure to test adventurer in this gameState\n");
+            printf("Randomize unsuccessful\n");
             continue;
         }
 
-        // store old deck and hand counts
-        //int oldHandCount = numHandCards(testG);
-        //int oldDeckCount = testG->deckCount[p];
-        //int oldDiscardCount = testG->discardCount[p];
+        //initializeGame(2, k, seed, &testG);
+
+        printf("Test #%d\n", n);
+        int p = whoseTurn(&testG);
+
         int oldHandCount = numHandCards(&testG);
         int oldDeckCount = testG.deckCount[p];
         int oldDiscardCount = testG.discardCount[p];
 
         // assert the card did not fail to play
+        printf("TEST 0: testing cardEffect returns correctly\n");
         asserttrue(cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus) == 0)
 
         // store new deck and hand counts
-        //int newHandCount = numHandCards(testG);
-        //int newDeckCount = testG->deckCount[p];
-        //int newDiscardCount = testG->discardCount[p];
         int newHandCount = numHandCards(&testG);
         int newDeckCount = testG.deckCount[p];
         int newDiscardCount = testG.discardCount[p];
