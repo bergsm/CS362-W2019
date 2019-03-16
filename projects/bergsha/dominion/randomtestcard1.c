@@ -10,6 +10,7 @@
 #define asserttrue(bool) if(bool) printf("TEST PASSED!\n"); else printf("TEST FAILED: '" #bool "' on line %d.\n", __LINE__);
 
 #define TESTCARD "smithy"
+#define TESTCASES 30
 
 // smithy card test
 void cardtest2()
@@ -27,7 +28,7 @@ void cardtest2()
 
 	printf("Testing Card: %s\n", TESTCARD);
 
-    for (int n=0; n<2000; n++)
+    for (int n=0; n<TESTCASES; n++)
     {
         // initializeGame(2, k, seed, testG);
         if (randomizeGame(adventurer, &testG) != 0)

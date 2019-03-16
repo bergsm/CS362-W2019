@@ -10,6 +10,7 @@
 #define asserttrue(bool) if(bool) printf("TEST PASSED!\n"); else printf("TEST FAILED: '" #bool "' on line %d.\n", __LINE__);
 
 #define TESTCARD "village"
+#define TESTCASES 30
 
 // village card test
 void cardtest3()
@@ -26,7 +27,7 @@ void cardtest3()
 
 	printf("Testing Card: %s\n", TESTCARD);
 
-    for (int n=0; n<2000; n++)
+    for (int n=0; n<TESTCASES; n++)
     {
 
         //initializeGame(2, k, seed, testG);
