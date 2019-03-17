@@ -1,0 +1,1453 @@
+randomtestadventurer.c:
+Testing Card: adventurer
+Test #0
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 4
+handCount: 4
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #1
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 6
+Card Drawn: 4
+handCount: 6
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #2
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 4
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #3
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #4
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #5
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 7
+Card Drawn: 0
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #6
+TEST 0: testing cardEffect returns correctly
+handCount: 9
+Card Drawn: 0
+handCount: 9
+Card Drawn: 0
+handCount: 8
+Card Drawn: 1
+handCount: 7
+Card Drawn: 4
+handCount: 7
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #7
+TEST 0: testing cardEffect returns correctly
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #8
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 4
+handCount: 4
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #9
+TEST 0: testing cardEffect returns correctly
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 4
+handCount: 6
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #10
+TEST 0: testing cardEffect returns correctly
+handCount: 9
+Card Drawn: 0
+handCount: 9
+Card Drawn: 0
+handCount: 8
+Card Drawn: 4
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #11
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 4
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST FAILED: 'oldDiscardCount != newDiscardCount' on line 67.
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST PASSED!
+Test #12
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 4
+handCount: 6
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #13
+TEST 0: testing cardEffect returns correctly
+handCount: 8
+Card Drawn: 4
+handCount: 9
+Card Drawn: 0
+handCount: 9
+Card Drawn: 0
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #14
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 4
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #15
+TEST 0: testing cardEffect returns correctly
+handCount: 8
+Card Drawn: 4
+handCount: 9
+Card Drawn: 0
+handCount: 9
+Card Drawn: 0
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #16
+TEST 0: testing cardEffect returns correctly
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 4
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #17
+TEST 0: testing cardEffect returns correctly
+handCount: 9
+Card Drawn: 4
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #18
+TEST 0: testing cardEffect returns correctly
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 4
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #19
+TEST 0: testing cardEffect returns correctly
+handCount: 9
+Card Drawn: 4
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 7
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #20
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 4
+handCount: 7
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST FAILED: 'oldDiscardCount != newDiscardCount' on line 67.
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST PASSED!
+Test #21
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 4
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 8
+Card Drawn: 1
+handCount: 7
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #22
+TEST 0: testing cardEffect returns correctly
+handCount: 9
+Card Drawn: 1
+handCount: 9
+Card Drawn: 1
+handCount: 8
+Card Drawn: 4
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #23
+TEST 0: testing cardEffect returns correctly
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 4
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #24
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 4
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST FAILED: 'oldDiscardCount != newDiscardCount' on line 67.
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST PASSED!
+Test #25
+TEST 0: testing cardEffect returns correctly
+handCount: 7
+Card Drawn: 4
+handCount: 8
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST FAILED: 'oldDiscardCount != newDiscardCount' on line 67.
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST PASSED!
+Test #26
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 4
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #27
+TEST 0: testing cardEffect returns correctly
+handCount: 10
+Card Drawn: 0
+handCount: 9
+Card Drawn: 4
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+Test #28
+TEST 0: testing cardEffect returns correctly
+handCount: 8
+Card Drawn: 4
+handCount: 9
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST FAILED: 'oldDiscardCount != newDiscardCount' on line 67.
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST PASSED!
+Test #29
+TEST 0: testing cardEffect returns correctly
+handCount: 6
+Card Drawn: 4
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 7
+Card Drawn: 1
+handCount: 6
+Card Drawn: 1
+handCount: 5
+Card Drawn: 4
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 59.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number of cards in discard pile has changed
+TEST PASSED!
+TEST 4: testing number of cards in player's hand has increased by 2
+TEST FAILED: 'newHandCount == oldHandCount+2' on line 71.
+File 'dominion.c'
+Lines executed:13.90% of 561
+Creating 'dominion.c.gcov'
+
+randomtestcard1.c:
+Testing Card: smithy
+Test #0
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #1
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #2
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #3
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #4
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #5
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #6
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #7
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #8
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #9
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #10
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #11
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #12
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #13
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #14
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #15
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #16
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 57.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #17
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #18
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 57.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #19
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #20
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #21
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #22
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #23
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 57.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #24
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #25
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #26
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #27
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 57.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #28
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Test #29
+TEST 0: testing cardEffect returns
+TEST PASSED!
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+File 'dominion.c'
+Lines executed:16.93% of 561
+Creating 'dominion.c.gcov'
+
+unittest1.c:
+Testing getCost function
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:21.93% of 561
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+Testing isGameOver function
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:32.62% of 561
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+Testing supplyCount function
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+TEST PASSED!
+File 'dominion.c'
+Lines executed:32.98% of 561
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+Testing bonus coins function
+Bonus
+TEST PASSED!
+Copper
+TEST FAILED: 'testG->coins == oldCoins + 1' on line 33.
+Silver
+TEST FAILED: 'testG->coins == oldCoins + 2' on line 39.
+Gold
+TEST FAILED: 'testG->coins == oldCoins + 3' on line 45.
+File 'dominion.c'
+Lines executed:33.33% of 561
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+Testing Card: smithy
+TEST 1: testing number of cards in player's hand has changed
+oldHandCount: 5
+newHandCount: 8
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+File 'dominion.c'
+Lines executed:34.22% of 561
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+Testing Card: village
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST FAILED: 'oldDeckCount != newDeckCount' on line 48.
+TEST 3: testing number of actions has increased by 2
+TEST PASSED!
+File 'dominion.c'
+Lines executed:35.29% of 561
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+Testing Card: great_hall
+TEST 1: testing number of cards in player's hand has changed
+TEST FAILED: 'oldHandCount != newHandCount' on line 44.
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+TEST 3: testing number actions has increased
+TEST PASSED!
+File 'dominion.c'
+Lines executed:36.01% of 561
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+Testing Card: adventurer
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 6
+Card Drawn: 0
+handCount: 5
+Card Drawn: 1
+handCount: 4
+Card Drawn: 1
+handCount: 3
+Card Drawn: 4
+handCount: 3
+Card Drawn: 4
+TEST 1: testing number of cards in player's hand has changed
+TEST PASSED!
+TEST 2: testing number of cards in deck has changed
+TEST PASSED!
+File 'dominion.c'
+Lines executed:36.01% of 561
+Creating 'dominion.c.gcov'
+
