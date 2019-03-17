@@ -1261,22 +1261,26 @@ int playSmithy(int currentPlayer, struct gameState *state, int handPos)
   return 0;
 }
 
-// Refactored Adventurer function
 
+
+
+// Refactored Adventurer function
 int playAdventurer(int drawntreasure, struct gameState *state, int currentPlayer, int temphand[], int z)
 {
   int cardDrawn = 0;
   while(drawntreasure<2)
   {
-    if (state->deckCount[currentPlayer] <1) 
-    { 
+    if (state->deckCount[currentPlayer] <1)
+    {
       //if the deck is empty we need to shuffle discard and add to deck
       shuffle(currentPlayer, state);
     }
     drawCard(currentPlayer, state);
 
+    printf("handCount: %d\n", state->handCount[currentPlayer]);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]]; //top card of hand is most recently drawn card.
-    
+
+    printf("Card Drawn: %d\n", cardDrawn);
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
     {
       drawntreasure++;

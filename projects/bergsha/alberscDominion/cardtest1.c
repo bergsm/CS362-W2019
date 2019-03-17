@@ -48,6 +48,9 @@ void cardtest1()
 
 int main(int argc, char *argv[])
 {
-    cardtest1();
+    for(int i=0; i<20; i++)
+    {
+        cardtest1();
+    }
     return 0;
 }
