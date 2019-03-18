@@ -39,6 +39,8 @@ void cardtest2()
 
 	// test 1 number of cards in the player's hand has changed
 	printf("TEST 1: testing number of cards in player's hand has changed\n");
+    printf("oldHandCount: %d\n", oldHandCount);
+    printf("newHandCount: %d\n", newHandCount);
 	asserttrue(oldHandCount != newHandCount);
 
 	// test 2 number of cards in the deck has changed
